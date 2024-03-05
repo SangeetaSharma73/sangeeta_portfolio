@@ -1,1 +1,1 @@
-# sangeeta_portfolio
+Dynamic professional 💼 excelling in web development, graphic design, and digital marketing. Skilled in HTML, CSS, JavaScript, Adobe Creative Suite, and marketing strategies. Portfolio showcases responsive websites 🌐, captivating logos 🎨, and successful marketing campaigns 📈. Ready to elevate your brand? Let's collaborate and bring your vision to life! 🚀

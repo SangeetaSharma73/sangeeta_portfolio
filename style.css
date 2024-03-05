@@ -1,0 +1,494 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navigation styles */
+.green {
+  color: #50e82a;
+}
+
+.nav-links-container > a {
+  position: relative;
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: #555;
+  margin-right: 20px;
+  transition: color 0.3s ease, border-bottom-color 0.3s ease; 
+}
+.nav-links-container > a::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #50e82a;
+  transition: width 0.3s ease; 
+}
+
+.nav-links-container > a:hover::after {
+  width: 100%;
+}
+
+.nav-links-container > a:hover {
+  color: #50e82a; 
+}
+
+
+.logo {
+  color: #555;
+  font-size: 1.3rem;
+}
+.logo > h2 {
+  display: inline;
+}
+.nav-container {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+.sticky {
+  top: 0;
+}
+.nav-links-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 47px;
+
+}
+.nav-links-container > a {
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: #555;
+  margin-right: 20px;
+}
+.btn-talk {
+  width: 100px;
+  height: 30px;
+  color: #fff;
+  text-decoration: none;
+  background: #50e82a;
+  border-radius: 7px;
+  border: 2px solid #50e82a;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+.btn-talk:hover {
+  color: #50e82a;
+  background: transparent;
+}
+
+.toggle-icon {
+  display: none;
+}
+
+/* Add animation for the toggle icon */
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .nav-links-container {
+    display: none;
+  }
+  .toggle-icon {
+    display: block;
+    animation: slideIn 0.5s forwards;
+    margin-right: 36px;
+  }
+  .responsive {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .responsive>a{
+    text-decoration: none;
+    color: #555;
+    font-size: 20px;
+  }
+  .responsive > a, .responsive > button {
+    margin: 10px;
+  }
+}
+
+/* below is the css for the home  */
+.Home-Container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  height: 100vh;
+  padding: 20px;
+  color: #555;
+}
+
+/* Styles for the left side of the Home section */
+.home-left {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.home-name-container {
+  /* margin-top: 30px; */
+}
+
+.home-name-container h2 {
+  font-size: 4rem;
+}
+
+.typewriter {
+  margin-top: 20px;
+}
+
+#typewriter-text {
+  font-size: 3em; 
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+
+/* Styles for the right side of the Home section */
+.home-right img {
+  width: 100%; /* Fill the container width */
+  max-width: 600px; /* Limit image size */
+  height: auto;
+  margin-top: 30px;
+}
+
+/* Media queries for responsiveness */
+@media only screen and (min-width: 768px) {
+  .Home-Container {
+    flex-direction: row;
+  }
+
+  .home-left {
+    width: 50%;
+    margin-right: 20px;
+    text-align: left;
+  }
+
+  .home-right {
+    width: 50%;
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .home-name-container h2 {
+    font-size: 2.3rem;
+  }
+
+  #typewriter-text {
+    font-size: 1.6rem;
+  }
+
+  .home-right img {
+    max-width: 400px;
+  }
+}
+
+@media only screen and (max-width: 355px) {
+  .home-right img {
+    max-width: 200px;
+  }
+}
+
+
+/* ALL THE CSS IS WRITTER FOR THE ABOUT PAGE  */
+
+/* About section styles */
+.section-about {
+  /* margin-top: 50px; */
+  /* margin-bottom: 120px; */
+  
+}
+
+
+.about-page {
+  text-align: center;
+  width: 94%;
+  margin: auto;
+  padding-top: 10px;
+  margin-bottom: 70px;
+
+}
+
+.about-page h1 {
+  padding: 17px 40px;
+  display: inline-block;
+  border-radius: 12px;
+  color: #555;
+  border: 3px solid #50e82a;
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.about-left img {
+  border-radius: 50%;
+  border: 2px solid #50e82a;
+}
+
+.about-right {
+  border: 3px solid #50e82a;
+  width: 60%;
+}
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-links a {
+  margin: 0 10px;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 668px) {
+  .about-content {
+    flex-direction: column;
+  }
+
+  .about-right {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+#projects{
+  padding-top: 20px;
+}
+#contact{
+  padding-top: 4px;
+}
+#about{
+  padding-top: 30px;
+}
+
+
+/* below is the css for the skills page okk  */
+#skills {
+  padding: 50px;
+  background-color: #f4f4f4;
+}
+
+.skill-container {
+  text-align: center;
+  
+}
+.skill-container>h2{
+  border: 2px solid #50e82a;
+  display: inline;
+  padding: 10px 25px;
+  border-radius: 10px;
+
+  
+}
+.skill-item-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.skill-item {
+  width: 30%;
+  margin: 10px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h4 {
+  margin-top: 10px;
+  
+}
+
+/* Container for the entire Projects section */
+.project-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+/* Heading style */
+.project-container h2 {
+  width: 150px;
+  
+  border-radius: 7px;
+  margin: auto;
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 30px;
+  border: 2px solid #50e82a;
+  text-align: center;
+  padding: 5px;
+}
+
+/* Container for individual project items */
+.project-item-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Styling for each project item */
+.project-item {
+  width: calc(50% - 20px);
+  margin-bottom: 40px;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+/* Image styling */
+.project-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Paragraph styling */
+.project-item p {
+  font-size: 1em;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+  .project-item {
+    width: 100%;
+  }
+}
+.button-container{
+display: flex;
+flex-wrap: wrap;
+}
+.button-container>a{
+  text-decoration: none;
+  color: #555;
+  padding: 6px;
+  border: 2px solid #50e82a;
+  border-radius: 6px;
+  margin-right: 5px;
+}
+
+/* styles for the icons on the page  */
+i{
+  margin-right: 7px;
+}
+
+
+
+/* css for the contact page  */
+.contact-container {
+  max-width: 1000px;
+  margin: 90px auto 200px;
+  text-align: center;
+}
+.contact-container>h2{
+  padding: 20px 25px;
+  display: inline-block;
+  border-radius: 12px;
+  text-align: center;
+  margin: auto;
+  border: 2px solid #50e82a;
+}
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.contact-item {
+  width: 70%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.contact-item:last-child {
+  margin-bottom: 0;
+}
+
+.contact-item:hover {
+  border: 3px solid #50e82a;
+  transform: translateY(-5px);
+}
+
+.contact-item a {
+  color: #555;
+  text-decoration: none;
+  font-size: 1.7rem;
+}
+
+.contact-item i {
+  font-size: 24px;
+  color: #50e82a;
+  margin-bottom: 10px;
+}
+
+.contact-item:hover a {
+  color: #50e82a;
+}
+
+
+/* here is the css for the foooter  */
+.footer {
+  text-align: center;
+  border: 2px solid #50e82a;
+  margin-top: 30px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-section {
+  margin: 0 20px;
+}
+
+.highlight {
+  color: #50e82a;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-content {
+      flex-direction: column;
+  }
+}
